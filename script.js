@@ -28,7 +28,22 @@ form.addEventListener("submit", function (event) {
 
   const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
 
-  successMsg.textContent = "Thanks! Opening WhatsApp...";
-  window.open(url, "_blank");
+//   successMsg.textContent = "Thanks! Opening WhatsApp...";
+//   window.open(url, "_blank");
+//   form.reset();
+
+successMsg.textContent = "Thanks! Opening WhatsApp...";
   form.reset();
+  window.open(url, "_blank");
+
+});
+
+
+
+
+window.addEventListener("pageshow", function (event) {
+  if (event.persisted) {
+    form.reset();
+    successMsg.textContent = "";
+  }
 });
