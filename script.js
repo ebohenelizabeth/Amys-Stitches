@@ -1,4 +1,3 @@
-
 const form = document.getElementById("order-form");
 const errorMsg = document.getElementById("error");
 const successMsg = document.getElementById("success");
