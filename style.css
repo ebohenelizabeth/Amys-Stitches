@@ -1,0 +1,123 @@
+:root {
+  --green: #1f4d3a;
+  --gold: #c9a24b;
+  --cream: #faf6ef;
+  --text: #2b2b2b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: var(--cream);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+  color: var(--green);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+header {
+  background: var(--green);
+  color: white;
+  text-align: center;
+  padding: 3rem 1.5rem;
+}
+
+header h1 {
+  color: white;
+  font-size: 2.4rem;
+  margin: 0 0 0.5rem;
+}
+
+header a {
+  display: inline-block;
+  margin-top: 1rem;
+  background: var(--gold);
+  color: var(--green);
+  font-weight: 500;
+  text-decoration: none;
+  padding: 0.8rem 1.6rem;
+  border-radius: 999px;
+}
+
+section {
+  padding: 2.5rem 1.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+section h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+footer {
+  background: var(--green);
+  color: white;
+  text-align: center;
+  padding: 1.2rem;
+}
+
+
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  background: white;
+  border-top: 4px solid var(--gold);
+  border-radius: 8px;
+  padding: 1.2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.card h3 {
+  margin: 0 0 0.4rem;
+}
+
+.card p {
+  margin: 0;
+}
+
+.note {
+  text-align: center;
+  margin-top: 1.5rem;
+  font-style: italic;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+.grid img {
+  width: 100%;
+  aspect-ratio: 1 / 2;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 8px;
+}
+
+#about p,
+#contact p {
+  text-align: center;
+}
+
+a {
+  color: var(--green);
+}
