@@ -155,3 +155,10 @@ a {
   color: #b00020;
   text-align: center;
 }
+
+
+#success {
+  color: var(--green);
+  text-align: center;
+  font-weight: 500;
+}

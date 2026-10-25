@@ -51,7 +51,8 @@
   <form id="order-form" novalidate>
     <label for="name">Your name</label>
     <input type="text" id="name" required>
-
+<label for="phone">Your phone number (optional)</label>
+<input type="tel" id="phone">
     <label for="outfit">Outfit type</label>
     <select id="outfit" required>
       <option value="">Choose one</option>
@@ -73,6 +74,7 @@
     <button type="submit">Send on WhatsApp</button>
   </form>
   <p id="error"></p>
+  <p id="success"></p>
 </section>
 
 
