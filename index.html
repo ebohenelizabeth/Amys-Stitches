@@ -45,6 +45,39 @@
     </div>
   </section>
 
+
+<section id="order">
+  <h2>Place an Order</h2>
+  <form id="order-form" novalidate>
+    <label for="name">Your name</label>
+    <input type="text" id="name" required>
+
+    <label for="outfit">Outfit type</label>
+    <select id="outfit" required>
+      <option value="">Choose one</option>
+      <option>Dress</option>
+      <option>Trousers</option>
+      <option>Corporate wear</option>
+      <option>Party wear</option>
+      <option>Native wear</option>
+      <option>Girls' wear</option>
+      <option>Alteration</option>
+    </select>
+
+    <label for="date">Needed by</label>
+    <input type="date" id="date">
+
+    <label for="notes">Fabric, style, or other details</label>
+    <textarea id="notes" rows="4"></textarea>
+
+    <button type="submit">Send on WhatsApp</button>
+  </form>
+  <p id="error"></p>
+</section>
+
+
+
+
   <section id="about">
     <h2>About Us</h2>
 
@@ -64,6 +97,6 @@
   <footer>
     <p>&copy; 2026 Amy's Stitches</p>
   </footer>
-
+<script src="script.js"></script>
 </body>
 </html>
